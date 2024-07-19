@@ -1,0 +1,18 @@
+.custom-button {
+  background-color: #1EE0CC !important; 
+  width: Hug (228.36px);
+  height: Hug (75.69px);
+  border-radius: 30.99px;
+  border: 50px; 
+  padding: 10px 15px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.custom-button:hover {
+  background-color: #17b8a5 !important; /* Cor ao passar o mouse */
+}
+
+
