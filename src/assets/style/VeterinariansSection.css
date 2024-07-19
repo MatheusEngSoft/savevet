@@ -1,9 +1,72 @@
-.principal{
+.principal {
   background-color: #DFD7FF;
+  padding: 20px;
+  color: #333333;
 }
 
 .header {
   text-align: center;
   font-weight: 700;
   font-size: 48px;
+  margin-top: 30px;
+  font-family: 'Fraunces', serif;
+}
+
+.section {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-cirurgia {
+  margin-left: 5px;
+}
+
+.image-cuidados {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.content img {
+  max-width: 405.9px; /* Ajuste conforme necessário */
+}
+
+.content div {
+  flex: 1;
+}
+
+h2 {
+  margin-bottom: 60px;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.texto2 {
+  margin-top: -50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 100px; /* Alinhamento com a imagem de cuidados */
+  margin-top: -20px; /* Ajuste conforme necessário */
+}
+
+footer .footer Button {
+  max-width: 150px; /* Ajuste conforme necessário */
 }

@@ -1,18 +1,24 @@
 .custom-button {
   background-color: #1EE0CC !important; 
-  width: Hug (228.36px);
-  height: Hug (75.69px);
+  width: Fixed (363px);
+  height: Hug (70.58px);
   border-radius: 30.99px;
-  border: 50px; 
-  padding: 10px 15px;
+  border: 2px solid #D0D0D0; 
+  padding: 10px 20px;
   color: #000000;
   font-weight: 600;
   font-size: 20px;
   text-align: center;
+  margin-left: 750px;
+  margin-top: -20px;
+  margin-bottom: 100px;
+  font-family: 'Lato', sans-serif;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.5s, box-shadow 0.3s;
 }
 
 .custom-button:hover {
-  background-color: #17b8a5 !important; /* Cor ao passar o mouse */
+  background-color: #0F9B9C !important; 
+  border-color: #FFFFFF;
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
-
-
