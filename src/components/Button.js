@@ -1,4 +1,4 @@
-import '../assets/style/Button.css'
+import '../assets/style/VeterinariansSection.css';
 
 export default function Button(props){
   return(

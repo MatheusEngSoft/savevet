@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/style/VeterinariansSection.css';
 import cirurgia from '../assets/images/cirurgia.svg';
 import cuidados from '../assets/images/cuidados.svg';
@@ -12,11 +13,13 @@ export default function VeterinariansSection() {
       </header>      
       <section className="section">
         <div className="container">
-          <div className="content">
-            <div className="image-cirurgia">
-              <img src={cirurgia} alt="Cirurgia" />
+          <div className="row content mb-4">
+            <div className="col-md-6 d-flex justify-content-center">
+              <div className="image-cirurgia">
+                <img src={cirurgia} alt="Cirurgia" />
+              </div>
             </div>
-            <div>
+            <div className="col-md-6">
               <h2>Expanda Sua Base de Clientes com Facilidade:</h2>
               <p>A SalveVet é a plataforma ideal para você, veterinário, que<br/>
                 deseja se conectar com novos clientes e expandir sua base<br/> 
@@ -27,11 +30,13 @@ export default function VeterinariansSection() {
                 prática.</p>
             </div>
           </div>
-          <div className="content">
-            <div className="image-cuidados">
-              <img src={cuidados} alt="Cuidados" />
+          <div className="row content">
+            <div className="col-md-6 d-flex justify-content-center">
+              <div className="image-cuidados">
+                <img src={cuidados} alt="Cuidados" />
+              </div>
             </div>
-            <div className='texto2'>
+            <div className="col-md-6 texto2">
               <h2>Perfil Profissional e Gestão Centralizada:</h2>
               <p>Apresente-se de forma profissional com um perfil<br/>
                 completo na SalveVet e destaque suas qualificações e<br/>
