@@ -8,21 +8,21 @@ import Button from './Button';
 export default function VeterinariansSection() {
   return (
     <main className='principal'>
-      <header className='header'>
+      <header className='header text-center my-4'>
         <h1>Para Veterinários</h1>
-      </header>      
+      </header>
       <section className="section">
         <div className="container">
           <div className="row content mb-4">
-            <div className="col-md-6 d-flex justify-content-center">
+            <div className="col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
               <div className="image-cirurgia">
-                <img src={cirurgia} alt="Cirurgia" />
+                <img src={cirurgia} alt="Cirurgia" className="img-fluid" />
               </div>
             </div>
             <div className="col-md-6">
               <h2>Expanda Sua Base de Clientes com Facilidade:</h2>
               <p>A SalveVet é a plataforma ideal para você, veterinário, que<br/>
-                deseja se conectar com novos clientes e expandir sua base<br/> 
+                deseja se conectar com novos clientes e expandir sua base<br/>
                 de atendimento.<br/><br/>
                 Através de nossa plataforma, você pode oferecer consultas<br/>
                 domiciliares e teleconsultas, alcançando tutores de pets<br/>
@@ -31,12 +31,12 @@ export default function VeterinariansSection() {
             </div>
           </div>
           <div className="row content">
-            <div className="col-md-6 d-flex justify-content-center">
+            <div className="col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
               <div className="image-cuidados">
-                <img src={cuidados} alt="Cuidados" />
+                <img src={cuidados} alt="Cuidados" className="img-fluid" />
               </div>
             </div>
-            <div className="col-md-6 texto2">
+            <div className="col-md-6">
               <h2>Perfil Profissional e Gestão Centralizada:</h2>
               <p>Apresente-se de forma profissional com um perfil<br/>
                 completo na SalveVet e destaque suas qualificações e<br/>
@@ -51,7 +51,7 @@ export default function VeterinariansSection() {
           </div>
         </div>
       </section>
-      <footer className="footer">
+      <footer className="footer text-center my-4">
         <Button text="Sou Veterinário SalveVet" />
       </footer>
     </main>
