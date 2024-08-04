@@ -1,0 +1,104 @@
+
+.sidenav {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  width: 240px;
+  background: #F5F5F5;
+  height: 100vh;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+
+.sidenav.active {
+  width: 60px;
+  padding: 0;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.header.active {
+  justify-content: center;
+}
+
+
+.usuario {
+  width: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.seta {
+  width: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, margin-left 0.3s ease;
+}
+
+.sidenav .seta.active {
+  transform: rotate(0deg);
+  margin-left: auto;
+}
+
+.sidenav .seta {
+  transform: rotate(180deg);
+}
+
+
+ul {
+  padding: 0;
+  margin-top: 20px;
+}
+
+
+ul li {
+  list-style-type: none;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: justify-content 0.3s ease;
+}
+
+
+ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+ul li a svg {
+  margin-right: 10px; 
+}
+
+
+ul li a:hover,
+ul li a.active {
+  background: #172b4d;
+  color: #ffffff; 
+}
+
+
+.sidenav.active ul li a {
+
+  span {
+    display: none;
+  }
+}
+
+.sidenav.active ul li {
+  justify-content: center;
+}
