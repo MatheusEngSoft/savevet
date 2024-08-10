@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/style/VeterinariansSection.css';
 import cirurgia from '../assets/images/cirurgia.svg';
 import cuidados from '../assets/images/cuidados.svg';
-import Button from './Button';
 import SideBar from './SideBar';
 
 export default function VeterinariansSection() {
@@ -55,7 +54,7 @@ export default function VeterinariansSection() {
           </div>
         </section>
         <footer className="footer text-center my-4">
-          <Button text="Sou Veterinário SalveVet" />
+          <a href="#"><button type="button" className='custom-button'>Saber Mais</button></a>
         </footer>
       </main>
     </div>
