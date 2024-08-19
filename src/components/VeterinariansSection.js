@@ -3,14 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/style/VeterinariansSection.css';
 import cirurgia from '../assets/images/cirurgia.svg';
 import cuidados from '../assets/images/cuidados.svg';
-import SideBar from './SideBar';
 
 export default function VeterinariansSection() {
   return (
-    <div className="veterinarians-section-container">
-      <SideBar />
+    <div>
       <main className='principal'>
-        <header className='header text-center my-4'>
+        <header>
           <h1>Para Veterinários</h1>
         </header>
         <section className="section">

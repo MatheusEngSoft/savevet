@@ -1,47 +1,10 @@
-.veterinarians-section-container {
-  display: flex;
-}
-
-.principal {
-  margin-left: 240px; 
-  background-color: #DFD7FF;
-  color: #333333;
-  transition: margin-left 0.3s ease;
-  flex: 1; 
-}
-
-
-.sidenav.active + .principal {
-  margin-left: 60px; 
-}
-
-
-@media (max-width: 768px) {
-  .sidenav {
-    width: 100%;
-    height: auto; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: height 0.3s ease;
-  }
-
-  .sidenav.active {
-    height: 95vh; 
-  }
-
-  .principal {
-    margin-left: 0; 
-  }
-}
-
 .principal {
   background-color: #DFD7FF;
   padding: 20px;
   color: #333333;
 }
 
-.header {
+.principal header {
   text-align: center;
   font-weight: 700;
   font-size: 48px;
