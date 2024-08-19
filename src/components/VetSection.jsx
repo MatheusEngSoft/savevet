@@ -1,15 +1,16 @@
+import React from 'react'
 import Cards from './Cards'
-import SideBar from './SideBar'
-import '../assets/style/UserSection.css'
-import '../assets/style/Cards.css'
+import SideBarVet from './SideBarVet'
+import '../assets/style/vetSection.css'
+import '../assets/style/cards.css'
 import { LuBellRing } from "react-icons/lu";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { GoGear } from "react-icons/go";
 
-export default function UserSection() {
+function VetSection() {
   return (
     <div className='UserSection-container'>
-      <SideBar/>
+      <SideBarVet/>
       <main className='principalUser'>
         <header className='header-U'>
         <LuBellRing />
@@ -38,3 +39,5 @@ export default function UserSection() {
       
   )
 }
+
+export default VetSection

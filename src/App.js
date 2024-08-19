@@ -1,11 +1,11 @@
-import SideBar from "./components/SideBar";
-import UserSection from "./components/UserSection";
-import VeterinariansSection from "./components/VeterinariansSection";
+import VetSection from "./components/VetSection";
+import UserSection from './components/UserSection'
+
 
 function App() {
   return (
     <div>
-      <VeterinariansSection/>
+      <UserSection/>
     </div>
   );
 }

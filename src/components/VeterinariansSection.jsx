@@ -1,10 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../assets/style/VeterinariansSection.css';
+import '../assets/style/veterinariansSection.css';
 import cirurgia from '../assets/images/cirurgia.svg';
 import cuidados from '../assets/images/cuidados.svg';
 
-export default function VeterinariansSection() {
+function VeterinariansSection() {
   return (
     <div>
       <main className='principal'>
@@ -58,3 +58,5 @@ export default function VeterinariansSection() {
     </div>
   );
 }
+
+export default VeterinariansSection

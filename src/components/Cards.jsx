@@ -1,6 +1,7 @@
-import '../assets/style/Cards.css'
+import React from 'react'
+import '../assets/style/cards.css'
 
-export default function Cards(props) {
+function Cards(props) {
   return (
     <div className='card'>
       <h1>{props.title}</h1>
@@ -8,3 +9,5 @@ export default function Cards(props) {
     </div>
   )
 }
+
+export default Cards

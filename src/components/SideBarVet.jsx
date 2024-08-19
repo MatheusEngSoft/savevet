@@ -1,6 +1,8 @@
-import '../assets/style/SideBar.css';
-import Usuario from '../assets/images/usuario.svg';
-import Seta from '../assets/images/seta.svg';
+import * as React from 'react';
+
+import usuario from '../assets/images/usuario.svg'
+import seta from '../assets/images/seta.svg'
+import '../assets/style/sideBar.css';
 import { TfiViewGrid } from "react-icons/tfi";
 import { FaUserDoctor } from "react-icons/fa6";
 import { LuStethoscope, LuClipboardSignature, LuCalendarDays } from "react-icons/lu";
@@ -8,7 +10,7 @@ import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { AiOutlineMessage } from "react-icons/ai";
 import { useState } from 'react';
 
-export default function SideBar() {
+function SideBarVet() {
   const [active, setActive] = useState(true);
 
   const toggleSidebar = () => {
@@ -18,8 +20,8 @@ export default function SideBar() {
   return (
     <div className={`sidenav ${active ? 'active' : ''}`}>
       <div className={`header ${active ? 'active' : ''}`}>
-        <a href="/"><img src={Usuario} alt="Usuario" className='usuario'/></a>
-        <img src={Seta} alt="Seta" className={`seta ${active ? 'active' : ''}`} onClick={toggleSidebar}/>
+        <a href="/"><img src={usuario} alt="Usuario" className='usuario'/></a>
+        <img src={seta} alt="Seta" className={`seta ${active ? 'active' : ''}`} onClick={toggleSidebar}/>
       </div>
       <ul>
         <li>
@@ -47,3 +49,5 @@ export default function SideBar() {
     </div>
   );
 }
+
+export default SideBarVet
