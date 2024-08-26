@@ -1,53 +1,54 @@
-import * as React from 'react';
-
-import usuario from '../assets/images/usuario.svg'
-import seta from '../assets/images/seta.svg'
-import '../assets/style/sideBar.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useSidebar } from './SidebarContext';
+import usuario from '../assets/images/usuario.svg';
+import { IoIosArrowForward } from "react-icons/io";
 import { TfiViewGrid } from "react-icons/tfi";
-import { FaUserDoctor } from "react-icons/fa6";
+import { FaUserDoctor, FaHandHoldingHeart } from "react-icons/fa6";
 import { LuStethoscope, LuClipboardSignature, LuCalendarDays } from "react-icons/lu";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { AiOutlineMessage } from "react-icons/ai";
-import { useState } from 'react';
 
 function SideBarVet() {
-  const [active, setActive] = useState(true);
+  const { isActive, toggleSidebar, isMobile } = useSidebar();
 
-  const toggleSidebar = () => {
-    setActive(!active);
-  }
+  const navItems = [
+    { icon: <TfiViewGrid />, text: "Home", path: "/" },
+    { icon: <FaUserDoctor />, text: "Perfil", path: "/profile" },
+    { icon: <LuStethoscope />, text: "Meus Pacientes", path: "/patients" },
+    { icon: <LuClipboardSignature />, text: "Atendimentos", path: "/appointments" },
+    { icon: <LuCalendarDays />, text: "Agenda", path: "/schedule" },
+    { icon: <RiMoneyDollarCircleLine />, text: "Financeiro", path: "/finance" },
+    { icon: <AiOutlineMessage />, text: "Mensagens", path: "/messages" },
+    { icon: <FaHandHoldingHeart />, text: "Convidar um amigo", path: "/invite" },
+  ];
 
   return (
-    <div className={`sidenav ${active ? 'active' : ''}`}>
-      <div className={`header ${active ? 'active' : ''}`}>
-        <a href="/"><img src={usuario} alt="Usuario" className='usuario'/></a>
-        <img src={seta} alt="Seta" className={`seta ${active ? 'active' : ''}`} onClick={toggleSidebar}/>
+    <nav className={`sidenav ${isActive ? 'active' : ''}`} aria-label="Main navigation">
+      <div className={`header ${isActive ? 'active' : ''}`}>
+        <Link to="/">
+          <img src={usuario} alt="Usuario" className='usuario' />
+        </Link>
+        <button 
+          onClick={toggleSidebar} 
+          aria-expanded={isActive}
+          aria-label={isActive ? "Collapse sidebar" : "Expand sidebar"}
+        >
+          <IoIosArrowForward className={`seta ${isActive ? 'active' : ''}`}/>
+        </button>
       </div>
       <ul>
-        <li>
-          <a href="/"><TfiViewGrid /><span>Home</span></a>
-        </li>
-        <li>
-          <a href="/"><FaUserDoctor /><span>Perfil</span></a>
-        </li>
-        <li>
-          <a href="/"><LuStethoscope /><span>Meus Pacientes</span></a>
-        </li>
-        <li>
-          <a href="/"><LuClipboardSignature /><span>Atendimentos</span></a>
-        </li>
-        <li>
-          <a href="/"><LuCalendarDays /><span>Agenda</span></a>
-        </li>
-        <li>
-          <a href="/"><RiMoneyDollarCircleLine /><span>Financeiro</span></a>
-        </li>
-        <li>
-          <a href="/"><AiOutlineMessage /><span>Mensagens</span></a>
-        </li>
+        {navItems.map((item, index) => (
+          <li key={index}>
+            <Link to={item.path}>
+              {item.icon}
+              <span>{!isMobile || isActive ? item.text : ''}</span>
+            </Link>
+          </li>
+        ))}
       </ul>
-    </div>
+    </nav>
   );
 }
 
-export default SideBarVet
+export default SideBarVet;

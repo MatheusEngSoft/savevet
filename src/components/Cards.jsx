@@ -1,13 +1,12 @@
-import React from 'react'
-import '../assets/style/cards.css'
+import React from 'react';
 
-function Cards(props) {
+function Cards({ title, description }) {
   return (
     <div className='card'>
-      <h1>{props.title}</h1>
-      <p>{props.description}</p>
+      <h1>{title}</h1>
+      <p>{description}</p>
     </div>
-  )
+  );
 }
 
-export default Cards
+export default Cards;

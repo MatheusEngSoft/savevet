@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../assets/style/veterinariansSection.css';
 import cirurgia from '../assets/images/cirurgia.svg';
 import cuidados from '../assets/images/cuidados.svg';
 
