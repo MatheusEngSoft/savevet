@@ -5,6 +5,8 @@ import { SidebarProvider } from './components/SidebarContext';
 import VeterinariansSection from './components/VeterinariansSection';
 import VetSection from './components/VetSection';
 import UserSection from './components/UserSection';
+import PageChat from './components/PageChat';
+import ChatSection from './components/ChatSection';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="/veterinarians" element={<VeterinariansSection />} />
           <Route path="/vet-dashboard" element={<VetSection />} />
           <Route path="/user-dashboard" element={<UserSection />} />
+          <Route path="/page-chat" element={<PageChat />} />
+          <Route path="/chat" element={<ChatSection />} />
         </Routes>
       </SidebarProvider>
     </Router>
