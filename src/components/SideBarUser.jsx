@@ -21,7 +21,7 @@ function SideBarUser() {
     { icon: <LuCalendarDays />, text: "Agenda Consulta", path: "/schedule" },
     { icon: <LuStethoscope />, text: "Veterinários", path: "/veterinarians" },
     { icon: <RiMoneyDollarCircleLine />, text: "Financeiro", path: "/finance" },
-    { icon: <AiOutlineMessage />, text: "Mensagens", path: "/messages" },
+    { icon: <AiOutlineMessage />, text: "Mensagens", path: "/chat" },
     { icon: <IoBagAddOutline />, text: "Emergência", path: "/emergency" },
     { icon: <FaHandHoldingHeart />, text: "Convidar um amigo", path: "/invite" },
   ];

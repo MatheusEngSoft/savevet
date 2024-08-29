@@ -19,7 +19,7 @@ function SideBarVet() {
     { icon: <LuClipboardSignature />, text: "Atendimentos", path: "/appointments" },
     { icon: <LuCalendarDays />, text: "Agenda", path: "/schedule" },
     { icon: <RiMoneyDollarCircleLine />, text: "Financeiro", path: "/finance" },
-    { icon: <AiOutlineMessage />, text: "Mensagens", path: "/messages" },
+    { icon: <AiOutlineMessage />, text: "Mensagens", path: "/chat" },
     { icon: <FaHandHoldingHeart />, text: "Convidar um amigo", path: "/invite" },
   ];
 
