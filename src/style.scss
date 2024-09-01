@@ -595,3 +595,139 @@ p {
     }
   }
 }
+
+.billing-address {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center;
+  position: absolute;
+  z-index: 1000;
+  background-color: #0F9B9C;
+  gap: 20px;
+  margin: 10px;
+  margin-left: 40%;
+  margin-top: 150px;
+  width: 453px;
+  height: 640px;
+
+  .icon{
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+
+  }
+
+  input {
+    background-color: #E2FBF9;
+    border: 1px solid #88C9A1;
+    border-radius: 10px;
+    width: 374px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+}
+
+.pagment-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center;
+  position: absolute;
+  z-index: 1000;
+  background-color: #0F9B9C;
+  gap: 20px;
+  margin: 10px;
+  margin-left: 40%;
+  margin-top: 150px;
+  width: 453px;
+  height: 640px;
+
+  .icon{
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  input {
+    margin: 10px;
+    background-color: #5C2574;
+    border: 1px solid #88C9A1;
+    border-radius: 10px;
+    width: 374px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+}
+
+.pagment-resume {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center;
+  position: absolute;
+  z-index: 1000;
+  background-color: #0F9B9C;
+  gap: 20px;
+  margin: 10px;
+  margin-left: 40%;
+  margin-top: 150px;
+  width: 453px;
+  height: 640px;
+
+  .icon{
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  label {
+    display: flex;
+    gap: 200px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    width: fit-content;
+    
+    p{
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 11px 30px 11px 30px;
+    width: 350px;
+    height: Hug (56.53px);
+    margin-bottom: 20px;
+    background-color: #1EE0CC;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px  #afafaf;
+    transition: transform 0.3s ease;
+  }
+
+  button:hover {
+    transform: translate(-5px, -5px);
+  }
+
+}
