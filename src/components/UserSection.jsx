@@ -19,7 +19,7 @@ function UserSection() {
           <div className='dashb'>
             <h1>Dashboard</h1>
             <a href="#">
-              <button type="button" className='c-button'>COMPLETE O SEU CADASTRO</button>
+              <button type="button" className='c-button' onClick={() => {}}>COMPLETE O SEU CADASTRO</button>
             </a>
           </div>
           <div className='project1'>

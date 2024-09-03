@@ -6,7 +6,7 @@ import VeterinariansSection from './components/VeterinariansSection';
 import VetSection from './components/VetSection';
 import UserSection from './components/UserSection';
 import ChatSection from './components/ChatSection';
-import SelectCard from './components/SelectCard';
+import TestModal from './components/TestModal';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/vet-dashboard" element={<VetSection />} />
           <Route path="/user-dashboard" element={<UserSection />} />
           <Route path="/chat" element={<ChatSection />} />
-          <Route path="/billing-address" element={<SelectCard />} />
+          <Route path="/test-modal" element={<TestModal />} />
         </Routes>
       </SidebarProvider>
     </Router>
