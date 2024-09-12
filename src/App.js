@@ -7,6 +7,7 @@ import VetSection from './components/VetSection';
 import UserSection from './components/UserSection';
 import ChatSection from './components/ChatSection';
 import TestModal from './components/TestModal';
+import PerfilVetAdmin from './components/PerfilVetAdmin';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/user-dashboard" element={<UserSection />} />
           <Route path="/chat" element={<ChatSection />} />
           <Route path="/test-modal" element={<TestModal />} />
+          <Route path="/perfil-vetadmin" element={<PerfilVetAdmin/>} />
         </Routes>
       </SidebarProvider>
     </Router>

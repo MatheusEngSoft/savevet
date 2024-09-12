@@ -26,7 +26,7 @@ function SideBarVet() {
   return (
     <nav className={`sidenav ${isActive ? 'active' : ''}`} aria-label="Main navigation">
       <div className={`header ${isActive ? 'active' : ''}`}>
-        <Link to="/">
+        <Link to="/perfil-vetadmin">
           <img src={usuario} alt="Usuario" className='usuario' />
         </Link>
         <button 

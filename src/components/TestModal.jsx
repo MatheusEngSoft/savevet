@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './testModal.css'
-import PagmentResume from './PagmentResume'
+import PagmentForm from './PagmentForm'
 
 function TestModal() {
 
@@ -15,7 +15,7 @@ function TestModal() {
       <div>
         <button onClick={() => setOpenModal(true)}>Abrir Modal</button>
       </div>
-      <PagmentResume isOpen={openModal} onClose={closeModal}/>
+      <PagmentForm isOpen={openModal} onClose={closeModal}/>
     </div>
   )
 }
