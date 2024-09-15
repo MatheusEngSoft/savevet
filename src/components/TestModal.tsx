@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './testModal.css'
-import PagmentForm from './PagmentForm'
+import PagmentForm from './PagmentForm.tsx'
 
 function TestModal() {
 

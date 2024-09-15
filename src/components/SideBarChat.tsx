@@ -1,7 +1,7 @@
 import React from 'react'
-import NavBar from './NavBar'
-import Search from './Search'
-import Chats from './Chats'
+import NavBar from './NavBar.tsx'
+import Search from './Search.tsx'
+import Chats from './Chats.tsx'
 
 function SideBarChat() {
   return (

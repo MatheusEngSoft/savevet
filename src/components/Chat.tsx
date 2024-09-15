@@ -2,8 +2,8 @@ import React from 'react'
 import Cam from '../assets/images/cam.png'
 import Add from '../assets/images/add.png'
 import More from '../assets/images/more.png'
-import Messages from './Messages'
-import Input from './Input'
+import Messages from './Messages.tsx'
+import Input from './Input.tsx'
 
 function Chat() {
   return (

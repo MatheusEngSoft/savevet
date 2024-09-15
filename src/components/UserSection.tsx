@@ -1,6 +1,6 @@
 import React from 'react';
-import Cards from './Cards';
-import SideBarUser from './SideBarUser';
+import Cards from './Cards.tsx';
+import SideBarUser from './SideBarUser.tsx';
 import { LuBellRing } from "react-icons/lu";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { GoGear } from "react-icons/go";

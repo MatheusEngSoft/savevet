@@ -4,7 +4,7 @@ import { LuHotel, LuFacebook, LuInstagram, LuLinkedin, LuLayoutDashboard } from 
 import { IoLocationOutline } from "react-icons/io5";
 import { TbPencilMinus, TbPhotoEdit } from "react-icons/tb";
 import logo from '../assets/images/logo.svg'
-import Rating from './Rating';
+import Rating from './Rating.tsx';
 
 
 function PerfilVetAdmin() {

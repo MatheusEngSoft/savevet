@@ -1,6 +1,6 @@
 import React from 'react'
-import SideBarChat from '../components/SideBarChat'
-import Chat from '../components/Chat'
+import SideBarChat from './SideBarChat.tsx'
+import Chat from './Chat.tsx'
 
 function PageChat() {
   return (
