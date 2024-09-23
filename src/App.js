@@ -1,13 +1,13 @@
 import React from 'react';
 import './style.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { SidebarProvider } from './components/SidebarContext';
-import VeterinariansSection from './components/VeterinariansSection';
-import VetSection from './components/VetSection';
-import UserSection from './components/UserSection';
-import ChatSection from './components/ChatSection';
-import TestModal from './components/TestModal';
-import PerfilVetAdmin from './components/PerfilVetAdmin';
+import { SidebarProvider } from './components/SidebarContext.tsx';
+import VeterinariansSection from './components/VeterinariansSection.tsx';
+import VetSection from './components/VetSection.tsx';
+import UserSection from './components/UserSection.tsx';
+import ChatSection from './components/ChatSection.tsx';
+import TestModal from './components/TestModal.tsx';
+import PerfilVetAdmin from './components/PerfilVetAdmin.tsx';
 
 function App() {
   return (
